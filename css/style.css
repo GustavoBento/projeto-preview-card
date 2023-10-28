@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap');
+
+:root {
+    --cor-de-fundo: #0D1A2D; 
+    --cor-card: #14283C;
+    --cor-svg-ethereum: #00FFF8;
+    --cor-terciaria: rgb(133, 132, 132);
+    --font-principal: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    height: auto;
+    width: auto;
+    background-color: var(--cor-de-fundo);
+    color: white;
+    font-family: var(--font-principal);
+}
+
+.container_card {
+    flex-direction: column;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--cor-card);
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container_card_img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.container_card_subtitulo {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    margin: 15px 0px;
+}
+
+.container_card_subtitulo:hover {
+    color: var(--cor-svg-ethereum);
+}
+
+.container_card_texto {
+    font-size: 8px;
+    color: var(--cor-terciaria)
+}
+
+.container_card_ico {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    margin: 15px 0px;
+}
+
+
+.container_card_ico_ethereum_txt  {
+    padding-left: 5px;
+    display: inline-block;
+    font-weight: 500;
+    color: var(--cor-svg-ethereum);
+}
+
+.container_card_ico_ethereum, .container_card_ico_clock {
+    display: flex;
+    align-items: center;
+}
+
+.container_card_ico_clock_txt {
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.container_card_footer_avatar {
+    width: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.container_card_footer {
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.322);
+    padding: 10px 0px;
+    align-items: center;
+}
+
+.container_card_footer_txt {
+    font-size: 8px;
+    margin-left: 10px;
+    display: inline-block;
+    color: var(--cor-terciaria);
+}
+
+.container_card_footer_txt_autora {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .container_card {
+        width: 230px;
+        height: auto;
+    }
+
+    .container_card_img {
+        height: 55%;
+    }
+
+    .container_card_subtitulo {
+        font-size: 20px;
+    }
+
+    .container_card_ico {
+        margin-bottom: 20px;
+    }
+
+    .container_card_texto, .container_card_ico , .container_card_footer_txt {
+        font-size: 15px;
+    }
+
+    .container_card_footer_avatar {
+        width: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container_card {
+        width: 280px;
+        height: auto;
+    }
+
+    .container_card_img {
+        height: 58%;
+    }
+
+    .container_card_subtitulo {
+        font-size: 25px;
+    }
+
+    .container_card_ico {
+        margin-bottom: 30px;
+    }
+
+    .container_card_texto, .container_card_ico , .container_card_footer_txt {
+        font-size: 18px;
+    }
+
+    .container_card_footer_avatar {
+        width: 30px;
+    }
+}
