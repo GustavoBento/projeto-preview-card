@@ -23,7 +23,7 @@ body {
     padding: 20px;
     background-color: var(--cor-card);
     width: 150px;
-    height: auto;
+    height: 80%vh;
     border-radius: 10px;
 }
 
@@ -120,33 +120,6 @@ body {
 
     .container_card_texto, .container_card_ico , .container_card_footer_txt {
         font-size: 15px;
-    }
-
-    .container_card_footer_avatar {
-        width: 30px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container_card {
-        width: 280px;
-        height: auto;
-    }
-
-    .container_card_img {
-        height: 58%;
-    }
-
-    .container_card_subtitulo {
-        font-size: 25px;
-    }
-
-    .container_card_ico {
-        margin-bottom: 30px;
-    }
-
-    .container_card_texto, .container_card_ico , .container_card_footer_txt {
-        font-size: 18px;
     }
 
     .container_card_footer_avatar {
