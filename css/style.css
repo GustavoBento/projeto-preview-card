@@ -10,8 +10,9 @@
 
 body {
     display: flex;
+    box-sizing: border-box;
     height: auto;
-    width: auto;
+    width: 90vw;
     background-color: var(--cor-de-fundo);
     color: white;
     font-family: var(--font-principal);
@@ -23,7 +24,6 @@ body {
     padding: 20px;
     background-color: var(--cor-card);
     width: 150px;
-    height: 80%vh;
     border-radius: 10px;
 }
 
